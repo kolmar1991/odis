@@ -10,4 +10,10 @@
     <definition extends="default" name="form">
         <put-attribute name="body" value="/WEB-INF/views/private/first/form.jspx"/>
     </definition>
+    <definition extends="default" name="userData">
+        <put-attribute name="body" value="/WEB-INF/views/private/first/userData.jspx"/>
+    </definition>
+    <definition extends="default" name="getUserForm">
+        <put-attribute name="body" value="/WEB-INF/views/private/first/getUserForm.jspx"/>
+    </definition>
 </tiles-definitions>

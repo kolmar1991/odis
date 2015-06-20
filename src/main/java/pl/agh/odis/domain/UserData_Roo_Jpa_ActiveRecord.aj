@@ -25,9 +25,14 @@ privileged aspect UserData_Roo_Jpa_ActiveRecord {
     public static long UserData.countUserDatas() {
         return entityManager().createQuery("SELECT COUNT(o) FROM UserData o", Long.class).getSingleResult();
     }
-    
+
     public static List<UserData> UserData.findAllUserDatas() {
         return entityManager().createQuery("SELECT o FROM UserData o", UserData.class).getResultList();
+    }
+
+
+    public static List UserData.selectUser(String id) {
+        return entityManager().createQuery("SELECT o FROM UserData o where o.id="+id).getResultList();
     }
     
     public static List<UserData> UserData.findAllUserDatas(String sortFieldName, String sortOrder) {

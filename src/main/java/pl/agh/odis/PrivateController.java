@@ -27,10 +27,23 @@ public class PrivateController {
         return modelAndView;
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "getUser")
+    public ModelAndView getUser(ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
+        String id = request.getParameter("id");
+        ModelAndView modelAndView = new ModelAndView("userData");
+        modelAndView.addObject("users", UserData.selectUser(id));
+        return modelAndView;
+    }
+
 
     @RequestMapping(value="form", method = RequestMethod.GET)
     public String get(HttpServletRequest request, HttpServletResponse response) {
         return "form";
+    }
+
+    @RequestMapping(value="getUserF", method = RequestMethod.GET)
+    public String getUserForm(HttpServletRequest request, HttpServletResponse response) {
+        return "getUserForm";
     }
 
     @RequestMapping
