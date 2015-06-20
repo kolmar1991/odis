@@ -4,7 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
-           <menu:item id="i_controller__public_firstindex_id" messageCode="global_generic" url="/public/first/" z="gZBlVjwrkLXRtiBuQfoNADBZfyo="/>
+            <menu:item id="i_controller__public_firstindex_id" messageCode="global_generic" url="/public/first/" z="user-managed"/>
+            <menu:item id="i_controller__private_firstindex_id" messageCode="global_generic" url="/private/first/index" z="Td/V5LfC9gk4+WlfGupaU8poHyY="/>
         </menu:category>
     </menu:menu>
 </div>
