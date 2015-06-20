@@ -4,4 +4,10 @@
     <definition extends="default" name="private_index">
         <put-attribute name="body" value="/WEB-INF/views/private/first/index.jspx"/>
     </definition>
+    <definition extends="default" name="success">
+        <put-attribute name="body" value="/WEB-INF/views/private/first/success.jspx"/>
+    </definition>
+    <definition extends="default" name="form">
+        <put-attribute name="body" value="/WEB-INF/views/private/first/form.jspx"/>
+    </definition>
 </tiles-definitions>

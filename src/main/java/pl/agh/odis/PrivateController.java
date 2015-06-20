@@ -11,14 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class PrivateController {
 
-    @RequestMapping(method = RequestMethod.POST, value = "{id}")
-    public void post(@PathVariable Long id, ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
+    @RequestMapping(method = RequestMethod.POST, value = "submit")
+    public String post(ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
+        return "success";
     }
 
 
-    @RequestMapping(value="jeden", method = RequestMethod.GET)
+    @RequestMapping(value="form", method = RequestMethod.GET)
     public String get(HttpServletRequest request, HttpServletResponse response) {
-        return "private_index";
+        return "form";
     }
 
     @RequestMapping
