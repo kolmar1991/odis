@@ -14,6 +14,9 @@
           <input type="text" name="lastname" value="Kowalski"/>
           <br/><br/>
           <input type="submit" value="Submit"/>
+          <input type="hidden"
+                 name="${_csrf.parameterName}"
+                 value="${_csrf.token}"/>
       </form>
 
   </util:panel>

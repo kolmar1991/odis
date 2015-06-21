@@ -54,6 +54,9 @@
         <spring:message code="button_reset" var="reset_label" htmlEscape="false" />
         <input id="reset" type="reset" value="${fn:escapeXml(reset_label)}" />
       </div>
+        <input type="hidden"
+               name="${_csrf.parameterName}"
+               value="${_csrf.token}"/>
     </form>
   </util:panel>
 </div>
